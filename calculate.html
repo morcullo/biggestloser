@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="autdor" content="">
+
+    <title>Rankings</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- tdeme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+      function calc()
+      {
+
+        var marcoInital = Number(document.getElementById("marcoInitial").value);
+        var marcoCurrent = Number(document.getElementById("marcoCurrent").value);
+        var marcoLoss = document.getElementById("marcoLoss").value = getLoss(marcoInital, marcoCurrent);
+        document.getElementById("marcoPercent").value = getPercentage(marcoLoss, marcoInital);
+
+        var micaInital = Number(document.getElementById("micaInitial").value);
+        var micaCurrent = Number(document.getElementById("micaCurrent").value);
+        var micaLoss = document.getElementById("micaLoss").value = getLoss(micaInital, micaCurrent);
+        document.getElementById("micaPercent").value = getPercentage(micaLoss, micaInital);
+
+        var raffInital = Number(document.getElementById("raffInitial").value);
+        var raffCurrent = Number(document.getElementById("raffCurrent").value);
+        var raffLoss = document.getElementById("raffLoss").value = getLoss(raffInital, raffCurrent);
+        document.getElementById("raffPercent").value = getPercentage(raffLoss, raffInital);
+
+        var edwardInital = Number(document.getElementById("edwardInitial").value);
+        var edwardCurrent = Number(document.getElementById("edwardCurrent").value);
+        var edwardLoss = document.getElementById("edwardLoss").value = getLoss(edwardInital, edwardCurrent);
+        document.getElementById("edwardPercent").value = getPercentage(edwardLoss, edwardInital);
+
+        var leiInital = Number(document.getElementById("leiInitial").value);
+        var leiCurrent = Number(document.getElementById("leiCurrent").value);
+        var leiLoss = document.getElementById("leiLoss").value = getLoss(leiInital, leiCurrent);
+        document.getElementById("leiPercent").value = getPercentage(leiLoss, leiInital);
+
+        var larnInital = Number(document.getElementById("larnInitial").value);
+        var larnCurrent = Number(document.getElementById("larnCurrent").value);
+        var larnLoss = document.getElementById("larnLoss").value = getLoss(larnInital, larnCurrent);
+        document.getElementById("larnPercent").value = getPercentage(larnLoss, larnInital);
+
+        var shimInital = Number(document.getElementById("shimInitial").value);
+        var shimCurrent = Number(document.getElementById("shimCurrent").value);
+        var shimLoss = document.getElementById("shimLoss").value = getLoss(shimInital, shimCurrent);
+        document.getElementById("shimPercent").value = getPercentage(shimLoss, shimInital);
+
+        var queenInital = Number(document.getElementById("queenInitial").value);
+        var queenCurrent = Number(document.getElementById("queenCurrent").value);
+        var queenLoss = document.getElementById("queenLoss").value = getLoss(queenInital, queenCurrent);
+        document.getElementById("queenPercent").value = getPercentage(queenLoss, queenInital);
+
+        var richardInital = Number(document.getElementById("richardnitial").value);
+        var richardCurrent = Number(document.getElementById("richardCurrent").value);
+        var richardLoss = document.getElementById("richardLoss").value = getLoss(richardInital, richardCurrent);
+        document.getElementById("richardPercent").value = getPercentage(richardLoss, richardInital);
+
+        var jhenInital = Number(document.getElementById("jhenInitial").value);
+        var jhenCurrent = Number(document.getElementById("jhenCurrent").value);
+        var jhenLoss = document.getElementById("jhenLoss").value = getLoss(jhenInital, jhenCurrent);
+        document.getElementById("jhenPercent").value = getPercentage(jhenLoss, jhenInital);
+      }
+
+      function getLoss(initial, current)
+      {
+        return initial - current;
+      }
+
+      function getPercentage(loss, inital)
+      {
+        var percent = loss / inital;
+        return percent * 100;
+      }
+
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view tde page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  Menu <i class="fa fa-bars"></i>
+              </button>
+              <a class="redH1 navbar-brand" href="index.html">HOME</a>
+          </div>
+
+            <!-- Collect tde nav links, forms, and otder content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="results.html">Weekly Results</a>
+                    </li>
+                    <li>
+                        <a href="ranking.html">Rankings</a>
+                    </li>
+                    <li>
+                        <a href="rules.html">Rules</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for tdis header on tde line below. -->
+    <header class="intro-header" style="background-image: url('img/ranking.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div id="initialResults" class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="#initialResults">
+                        <h2 class="post-title">
+                            Calculator
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Calculates weight loss and percentage loss.
+                        </h3>
+                    </a>
+                    <br>
+                    <form>
+                      <fielfset>
+                        <legend>Marco Orcullo</legend>
+                        Initial Weight<br>
+                        <input type="text" name="marcoInitial" id="marcoInitial" value="228.5"><br>
+                        Current Weight<br>
+                        <input type="text" name="marcoCurrent" id="marcoCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="marcoLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="marcoPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Mica Orcullo</legend>
+                        Initial Weight<br>
+                        <input type="text" name="micaInitial" id="micaInitial" value="175.0"><br>
+                        Current Weight<br>
+                        <input type="text" name="micaCurrent" id="micaCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="micaLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="micaPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Raff Bactol</legend>
+                        Initial Weight<br>
+                        <input type="text" name="raffInitial" id="raffInitial" value="233.0"><br>
+                        Current Weight<br>
+                        <input type="text" name="raffCurrent" id="raffCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="micaLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="raffPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Edward Trinidad</legend>
+                        Initial Weight<br>
+                        <input type="text" name="edwardInitial" id="edwardInitial" value="231.0"><br>
+                        Current Weight<br>
+                        <input type="text" name="edwardCurrent" id="edwardCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="edwardLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="edwardPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Lei Trinidad</legend>
+                        Initial Weight<br>
+                        <input type="text" name="leiInitial" id="leiInitial" value="157.5"><br>
+                        Current Weight<br>
+                        <input type="text" name="leiCurrent" id="leiCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="leiLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="leiPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Laarni Tan</legend>
+                        Initial Weight<br>
+                        <input type="text" name="larnInitial" id="larnInitial" value="204.0"><br>
+                        Current Weight<br>
+                        <input type="text" name="larnCurrent" id="larnCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="larnLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="larnPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Queenie Trinidad</legend>
+                        Initial Weight<br>
+                        <input type="text" name="queenInitial" id="queenInitial" value="154.5"><br>
+                        Current Weight<br>
+                        <input type="text" name="queenCurrent" id="queenCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="queenLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="queenPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Richard Tan</legend>
+                        Initial Weight<br>
+                        <input type="text" name="richardInitial" id="richardInitial" value="188.0"><br>
+                        Current Weight<br>
+                        <input type="text" name="richardCurrent" id="richardCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="richardLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="richardPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Shim Pagtakhan</legend>
+                        Initial Weight<br>
+                        <input type="text" name="shimInitial" id="shimInitial" value="173.0"><br>
+                        Current Weight<br>
+                        <input type="text" name="shimCurrent" id="shimCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="shimLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="shimPercent"><br>
+                      </fieldset>
+                      <fielfset>
+                        <br>
+                        <legend>Jhen Timpug</legend>
+                        Initial Weight<br>
+                        <input type="text" name="jhenInitial" id="jhenInitial" value="169.5"><br>
+                        Current Weight<br>
+                        <input type="text" name="jhenCurrent" id="jhenCurrent" required><br>
+                        Weight Loss<br>
+                        <input type="text" id="jhenLoss"><br>
+                        Percentage Lost<br>
+                        <input type="text" id="jhenPercent"><br>
+                      </fieldset>
+                      <button type="submit" onclick="calc()">Calculate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/marcoorcullo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/maaaarco">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/morcullo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Marco Orcullo 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- tdeme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
